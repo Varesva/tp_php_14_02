@@ -1,0 +1,19 @@
+header {
+    background-color: rgba(232, 255, 150, 0.918);
+    width: 100%;
+    size: 20%;
+    font-size: large;
+}
+
+ul, li {
+    list-style: none;
+    text-decoration: none;
+}
+
+footer {
+position:absolute;
+bottom:0px;
+background-color: rgb(189, 189, 189);
+width: 100%;
+height: 40px;
+}

@@ -1,4 +1,0 @@
-<!-- Question de cours
- -->
-
-<?php
