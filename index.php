@@ -8,11 +8,13 @@
  4- MVC signifie Modèle - Vue - Contrôleur. Le but du MVC est de stocker son code de manière structurée.
 
 -->
-<?php include ("../header.php"); ?>
+
+<?php include ("header.php"); ?>
 <h1>Page d'accueil</h1>
 
-<form action="../crud/create.php" method="POST">
-        <h2>Créer un article: </h2>
+<h2>Créer un article: </h2>
+
+<form action="create.php" method="POST">
         <br>
         <label for="titre">Entrer le titre de l'article à créer: </label>
         <input type="text" name="titre" placeholder= "Vélo BMX neuf" required maxlength="50">
@@ -30,4 +32,4 @@
     </form>
 
     
-<?php include ("../footer.php"); ?>
+<?php include ("footer.php"); ?>

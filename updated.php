@@ -1,4 +1,4 @@
-<?php include ("../header.php"); ?>
+<?php include ("header.php"); ?>
 
 <?php
 
@@ -8,7 +8,7 @@ $prix -> prix=$_POST['prix'];
 $id=$_POST['id'];
 
 MonOrm();
-require_once("../Articles_db.php");
+require_once("Articles_db.php");
 
 $entry = Articles_db::retrieveByPK($_POST['id']);
 
@@ -18,4 +18,4 @@ $entry -> prix=$prix;
 $entry-> save();
 
 ?>
-<?php include ("../footer.php"); ?>
+<?php include ("footer.php"); ?>

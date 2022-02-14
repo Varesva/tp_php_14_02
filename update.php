@@ -1,19 +1,17 @@
-<!-- <h1>Modifier un article</h1>
-<?php include ("../header.php"); ?>
+<?php require ("header.php"); ?>
 <?php
 
-var_dump($_GET);
+// var_dump($_GET);
 $id=$_GET['id'];
 MonOrm();
-require_once("../Articles_db.php");
+require_once("Articles_db.php");
 
-$entry = Articles_db::retrieveByPK($_POST['id']);
+$entry = Articles_db::retrieveByPK($_GET['id']);
 
 ?>
 
-<!-- <form action="../crud/create.php" method="POST"> -->
-<form action="../crud/updated.php" method="post"></form> 
-        <h2>Modifier un article: </h2>
+    <h1>Modifier un article: </h1>
+<form action="updated.php" method="post"></form> 
         <br>
         <label for="titre">Entrer le titre de l'article à modifier: </label>
         <input type="text" name="titre" placeholder= "Vélo BMX neuf" maxlength="50">
@@ -23,9 +21,9 @@ $entry = Articles_db::retrieveByPK($_POST['id']);
         <br>
         <label for="description">Entrer la description de l'article à modifier: </label>
         <input type="text" name="description" placeholder= "Caractéristiques de l'article, état du produit (comme neuf, utilisé quelques fois etc)" maxlength="300" size="70">
-    
+        <br>
         <input type="submit" value="Modifier mon article">
     </form>
 
 
-<?php include ("../footer.php"); ?>
+<?php include ("footer.php"); ?>

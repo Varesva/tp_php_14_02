@@ -1,22 +1,20 @@
-<?php include ("../header.php"); ?>
+<?php include ("header.php"); ?>
 <h1>Article à créer</h1>
 <?php
 MonOrm();
-include("../articles_db.php");
+include("articles_db.php");
 
 
 // if(isset($_SESSION['user'])==true){
-    echo "Bienvenue dans votre espace !"; ?>
-         - <a href="../liste_articles.php">Liste de tous les articles </a>
-         - <a href="../favoris.php"> Articles favoris </a> 
+    echo "<div class = 'session_site'> Bienvenue dans votre espace !"; ?>
+         -  <a href="liste_articles.php">Liste de tous les articles </a>
+         - <a href="favoris.php"> Articles favoris </a> </div> 
         <?php     
     // }
 
 
 echo " <h2> Vous venez de créer l'article suivant : </h2>
-<p> <h3> - Titre: </h3> ". $_POST['titre'].
-"<br> <h3>- Prix: </h3>" .$_POST['prix'].
-"<br> <h3>- Description: </h3>" .$_POST['description']. "</p>";
+<div class='creation_site'> <h3> - Titre: </h3> ". $_POST['titre']." <h3>- Prix: </h3>" .$_POST['prix']." <h3>- Description: </h3>" .$_POST['description']. "</div>";
 
 // <br> <h3>- Photo: </h3>" .$_FILES['photo'] - pour la photo
 
@@ -40,4 +38,4 @@ if(
 ?>
 
 
-<?php include ("../footer.php"); ?>
+<?php include ("footer.php"); ?>

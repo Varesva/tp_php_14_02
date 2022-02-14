@@ -1,6 +1,6 @@
-<?php include ("../header.php"); ?>
+<?php include ("header.php"); ?>
 <?php MonOrm(); 
-require_once("../Articles_db.php");
+require_once("Articles_db.php");
 
 $id=$_GET['id'];
 
@@ -8,7 +8,7 @@ $entry = Articles_db::retrieveByPK($id);
 
 $entry->delete();
 
-echo "L'article a bien été supprimé.";
+echo "<p> L'article a bien été supprimé.<p>";
 ?>
 <!-- 
 <form action="../crud/deleteconf.php" method="POST">
@@ -24,4 +24,4 @@ echo "L'article a bien été supprimé.";
 
 
 
-<?php include ("../footer.php"); ?>
+<?php include ("footer.php"); ?>
