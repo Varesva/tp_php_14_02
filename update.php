@@ -1,7 +1,7 @@
 <?php require ("header.php"); ?>
 <?php
 
-// var_dump($_GET);
+// var_dump ($_GET);
 $id=$_GET['id'];
 MonOrm();
 require_once("Articles_db.php");
